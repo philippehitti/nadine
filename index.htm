@@ -1,152 +1,99 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Aptos;
-	panose-1:2 11 0 4 2 2 2 2 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-.MsoChpDefault
-	{font-family:"Aptos",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:612.0pt 792.0pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+  <meta charset="UTF-8">
+  <title>Nadine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Luxury Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* Minimal luxury gradient */
+      background: linear-gradient(135deg, #0f0f0f, #2a2a2a);
+
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box {
+      background: #ffffff;
+      padding: 50px 100px;
+      border-radius: 6px;
+
+      /* soft shadow */
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+      /* fade-in animation */
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease forwards;
+
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* hover glow effect */
+    .box:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 30px 80px rgba(255, 255, 255, 0.15);
+    }
+
+    .name {
+      font-size: 56px;
+      color: #000;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .box {
+        padding: 40px 60px;
+      }
+
+      .name {
+        font-size: 40px;
+      }
+    }
+  </style>
 </head>
 
-<body lang=en-LB style='word-wrap:break-word'>
+<body>
 
-<div class=WordSection1>
+  <div class="box" onclick="goSomewhere()">
+    <div class="name">Nadine</div>
+  </div>
 
-<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
-
-<p class=MsoNormal>&lt;html lang=&quot;en&quot;&gt;</p>
-
-<p class=MsoNormal>&lt;head&gt;</p>
-
-<p class=MsoNormal>  &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
-
-<p class=MsoNormal>  &lt;title&gt;Nadine&lt;/title&gt;</p>
-
-<p class=MsoNormal>  &lt;meta name=&quot;viewport&quot;
-content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>  &lt;style&gt;</p>
-
-<p class=MsoNormal>    body {</p>
-
-<p class=MsoNormal>      margin: 0;</p>
-
-<p class=MsoNormal>      height: 100vh;</p>
-
-<p class=MsoNormal>      display: flex;</p>
-
-<p class=MsoNormal>      justify-content: center;</p>
-
-<p class=MsoNormal>      align-items: center;</p>
-
-<p class=MsoNormal>      background-color: #111; /* dark background */</p>
-
-<p class=MsoNormal>      font-family: Arial, Helvetica, sans-serif;</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    .box {</p>
-
-<p class=MsoNormal>      background-color: white;</p>
-
-<p class=MsoNormal>      padding: 40px 80px;</p>
-
-<p class=MsoNormal>      border-radius: 8px;</p>
-
-<p class=MsoNormal>      box-shadow: 0 10px 30px rgba(0,0,0,0.3);</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    .name {</p>
-
-<p class=MsoNormal>      font-size: 48px;</p>
-
-<p class=MsoNormal>      font-weight: bold;</p>
-
-<p class=MsoNormal>      color: black;</p>
-
-<p class=MsoNormal>      text-align: center;</p>
-
-<p class=MsoNormal>      letter-spacing: 2px;</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    @media (max-width: 600px) {</p>
-
-<p class=MsoNormal>      .box {</p>
-
-<p class=MsoNormal>        padding: 30px 50px;</p>
-
-<p class=MsoNormal>      }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      .name {</p>
-
-<p class=MsoNormal>        font-size: 36px;</p>
-
-<p class=MsoNormal>      }</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>  &lt;/style&gt;</p>
-
-<p class=MsoNormal>&lt;/head&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>&lt;body&gt;</p>
-
-<p class=MsoNormal>  &lt;div class=&quot;box&quot;&gt;</p>
-
-<p class=MsoNormal>    &lt;div class=&quot;name&quot;&gt;Nadine&lt;/div&gt;</p>
-
-<p class=MsoNormal>  &lt;/div&gt;</p>
-
-<p class=MsoNormal>&lt;/body&gt;</p>
-
-<p class=MsoNormal>&lt;/html&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-</div>
+  <script>
+    function goSomewhere() {
+      // 🔗 CHANGE THIS LINK
+      window.location.href = "https://wa.me/961XXXXXXXX"; 
+      
+      // Examples:
+      // Instagram → https://instagram.com/username
+      // Website → https://yourwebsite.com
+      // WhatsApp → https://wa.me/961XXXXXXXX
+    }
+  </script>
 
 </body>
-
 </html>
